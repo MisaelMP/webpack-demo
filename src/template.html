@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Demo</title>
-  </head>
-  <body class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Webpack Demo</title>
+</head>
+
+<body class="container-fluid p-0">
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h4 class="text-white">Collapsed content</h4>
+        <span class="text-muted">Toggleable via the navbar brand.</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+  <div class="container">
     <h1 class="text-center mt-5">
       Welcome Human!
     </h1>
+    <img src="./assets/webpack.svg" />
     <div class="alert alert-danger" id="error" role="alert"></div>
     <div class="row mt-5">
       <div class="col">
@@ -31,6 +45,7 @@
     <div class="card mt-5">
       <div class="card-body">The result is: <span id="result"></span></div>
     </div>
-    <img src="./assets/webpack.svg" />
-  </body>
-  </html>
+  </div>
+</body>
+
+</html>
